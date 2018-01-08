@@ -3,20 +3,26 @@
 Command line tool to validate TOML syntax of input file.
 
 
-# Installation
+## Installation
+
+Windows and macOS binaries are available under [Releases](https://github.com/martinlindhe/validtoml/releases)
+
+Or install from source:
 
     go get -u github.com/martinlindhe/validtoml
 
 
-# Usage
+## Usage
 
 Exit code will be 0 if file is good.
 
-    validtoml file.toml
-
+    $ validtoml file.toml
     OK: file.toml
 
+    $ curl http://site.com/file.toml | validtoml
+    OK: -
 
-# License
+
+## License
 
 Under [MIT](LICENSE)
