@@ -1,7 +1,5 @@
 # About
 
-[![gorelease](https://dn-gorelease.qbox.me/gorelease-download-blue.svg)](https://gobuild.io/martinlindhe/validtoml/master)
-
 Command line tool to validate TOML syntax of input file.
 
 
