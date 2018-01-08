@@ -27,15 +27,20 @@ func main() {
 		os.Exit(1)
 	}
 
+	filename := "-"
+	if *inFile != "" {
+		filename = *inFile
+	}
+
 	var f interface{}
 	_, err = toml.Decode(string(data), &f)
 	if err != nil {
-		fmt.Println("ERROR:", *inFile, err)
+		fmt.Println("ERROR:", filename, err)
 		os.Exit(1)
 	}
 
 	if !*quiet {
-		fmt.Println("OK:", *inFile)
+		fmt.Println("OK:", filename)
 	}
 }
 
