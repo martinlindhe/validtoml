@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/BurntSushi/toml"
+	"github.com/alecthomas/kingpin/v2"
 	termutil "github.com/andrew-d/go-termutil"
-	"gopkg.in/alecthomas/kingpin.v2"
 )
 
 var (
